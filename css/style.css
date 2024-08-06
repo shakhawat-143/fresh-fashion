@@ -1,0 +1,342 @@
+/* ========== common css satrt ========= */
+/* poppiens font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Frank Ruhl Libre */
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #fae3b6;
+  --secondery-color: #ffffff;
+  --third-color: #000000;
+  --star-color: #ffaf37;
+  --primary-font: "Poppins", sans-serif;
+  --secondery-font: "Frank Ruhl Libre", serif;
+}
+.container {
+  max-width: 1440px;
+}
+a {
+  text-decoration: none;
+}
+
+/* ========== common css end ========= */
+
+/* ========== nav start ========== */
+header {
+  background: var(--primary-color);
+}
+header nav .navbar-brand {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--third-color);
+}
+header nav .navbar-nav {
+  gap: 59px;
+}
+header nav .navbar-nav .nav-item .nav-link {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--third-color);
+  text-transform: capitalize;
+}
+header nav .log-sign {
+  gap: 10px;
+}
+header nav .log-sign a {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--third-color);
+  padding: 10px 27px;
+  border: 1px solid #ffaf37;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+header nav .log-sign a:hover {
+  background: #ffaf37;
+}
+/* ========== nav end ========== */
+/* ========== banner start ========== */
+#banner {
+  padding: 62px 0 200px;
+  background: var(--primary-color);
+}
+#banner .bnr-txt {
+  padding-left: 41px;
+}
+#banner .bnr-txt h1 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 64px;
+  color: var(--third-color);
+  width: 70%;
+}
+#banner .bnr-txt p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--third-color);
+  padding: 38px 0 74px;
+  width: 80%;
+}
+#banner .bnr-txt a {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--secondery-color);
+  padding: 25px 91px;
+  background: var(--third-color);
+  text-transform: uppercase;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#banner .bnr-img {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+#banner .bnr-img .banner-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+#banner .bnr-img .bnr-shap {
+  position: absolute;
+  top: 450px;
+  left: 75px;
+  z-index: 0;
+}
+/* ========== banner end ========== */
+/* ========== connection start ========== */
+#collection {
+  padding: 100px 0;
+}
+#collection .title {
+  text-align: center;
+}
+#collection .title h2 {
+  font-weight: 700;
+  font-family: var(--secondery-font);
+  font-size: 64px;
+  color: var(--third-color);
+  text-transform: capitalize;
+}
+#collection .title p {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--primary-font);
+  color: var(--third-color);
+}
+#collection .collection-box {
+  margin-top: 28px;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+#collection .collection-box img {
+  width: 100%;
+  height: 100%;
+}
+#collection .collection-box a {
+  font-size: 24px;
+  font-family: var(--primary-font);
+  color: var(--third-color);
+  text-transform: capitalize;
+  padding: 10px 108px;
+  background: var(--secondery-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#collection .collection-box:hover a {
+  top: 80%;
+}
+/* ========== connection end ========== */
+/* ========== fashion start ========== */
+#fashion {
+  padding: 50px 0 00px;
+}
+#fashion .hudai {
+  margin-top: 710px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#fashion .fashion-box {
+  position: relative;
+  text-align: right;
+}
+#fashion .fashion-box .fashion-shap {
+  padding: 0px 60px 0 0;
+}
+#fashion .fashion-box .fashionimage {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+#fashion .fashion-txt {
+  position: relative;
+}
+#fashion .fashion-txt h2 {
+  font-weight: 700;
+  font-size: 64px;
+  font-family: var(--secondery-font);
+  color: var(--third-color);
+  margin-top: 140px;
+  width: 70%;
+}
+#fashion .fashion-txt p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--third-color);
+  width: 443px;
+  margin-top: 63px;
+}
+#fashion .fashion-txt .count-box {
+  display: flex;
+  align-items: center;
+  width: 793px;
+  height: 280px;
+  background: var(--primary-color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+#fashion .fashion-txt .count-box p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--third-color);
+}
+#fashion .fashion-txt .count-box p .uper-number {
+  font-weight: 700;
+  font-size: 44px;
+  font-family: var(--secondery-font);
+  color: var(--third-color);
+}
+#fashion .fashion-txt .count-box p:nth-child(1) {
+  border-right: 3px solid var(--secondery-color);
+}
+#fashion .fashion-txt .count-box p:nth-child(2) {
+  border-right: 3px solid var(--secondery-color);
+}
+#fashion .fashion-txt .count-box {
+  position: absolute;
+  bottom: -430px;
+  left: -240px;
+  z-index: -1;
+}
+/* ========== fashion end ========== */
+/* ========== footer start ========== */
+#footer {
+  padding: 56px 0 190px;
+  background: #cfa485;
+}
+#footer h2{
+  font-family: var(--secondery-font);
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--secondery-color);
+}
+#footer p{
+  font-family: var(--secondery-font);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--secondery-color);
+  padding: 40px 0 40px;
+  
+}
+#footer .foot-button{
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondery-color);
+  padding: 25px  100px;
+  background: var(--third-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-transform: uppercase;
+}
+#footer .card{
+  background: transparent;
+  border: none;
+}
+#footer .card .card-body {
+  background: var(--secondery-color);
+}
+#footer .card .card-body ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#footer .card .card-body ul li a{
+  color: var(--star-color);
+}
+#footer .card .card-body h4{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--third-color);
+  padding: 15px 0 15px;
+  margin: 0;
+}
+#footer .card .card-body .card-text{
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  gap: 31px;
+}
+#footer .card .card-body .card-text span:first-child{
+  color: #C4C4C4;
+}
+#footer .card .card-body .card-text span:last-child{
+  color: var(--third-color);
+}
+
+/* ========== footer end ========== */
